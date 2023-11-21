@@ -35,7 +35,7 @@ const Navbar = () => {
       justify="space-between"
       wrap="wrap"
       padding="1rem"
-      bg="teal.500"
+      bg="blue.700"
       color="white"
     >
       <Link href="/">
@@ -52,7 +52,7 @@ const Navbar = () => {
           </Link>
         )}
         {!isLoggedIn ? (
-          <Button onClick={onOpen} colorScheme="blue">
+          <Button onClick={onOpen} colorScheme="blue" mr={10}>
             Login
           </Button>
         ) : (

@@ -86,33 +86,31 @@ export default function BookForm({ bookData }) {
     <form onSubmit={handleSubmit}>
       <VStack spacing={4}>
         <FormControl>
-          <FormLabel>Title</FormLabel>
-          <Input name="title" required defaultValue={bookData?.title} />
+          <Input name="title" required defaultValue={bookData?.title} placeholder="Title"/>
         </FormControl>
         <FormControl>
-          <FormLabel>Author</FormLabel>
-          <Input name="author" required defaultValue={bookData?.author} />
+          <Input name="author" required defaultValue={bookData?.author} placeholder="Author"/>
         </FormControl>
         <FormControl>
-          <FormLabel>Publisher</FormLabel>
-          <Input name="publisher" required defaultValue={bookData?.publisher} />
+          <Input name="publisher" required defaultValue={bookData?.publisher} placeholder="Publisher"/>
         </FormControl>
         <FormControl>
-          <FormLabel>Year</FormLabel>
+          <FormLabel></FormLabel>
           <Input
             name="year"
             type="number"
             required
             defaultValue={bookData?.year}
+            placeholder="Year"
           />
         </FormControl>
         <FormControl>
-          <FormLabel>Pages</FormLabel>
           <Input
             name="pages"
             type="number"
             required
             defaultValue={bookData?.pages}
+            placeholder="Pages"
           />
         </FormControl>
         {selectedImage && (

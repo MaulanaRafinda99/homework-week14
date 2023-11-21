@@ -15,7 +15,7 @@ export default function Homepage(props) {
 
 // server side props ( fetch in server )
 
-export async function getServerSideProps() {
+export async function getServerSideProps(req, res) {
   try {
     const books = await prisma.book.findMany({
       orderBy: {
